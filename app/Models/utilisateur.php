@@ -6,8 +6,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\admin;
 
+
 class utilisateur extends Model
 {
+
     use HasFactory;
     protected $fillable = [
         'id_user',
@@ -25,4 +27,16 @@ class utilisateur extends Model
  
     
    
+
+
+    use HasFactory;
+    protected $fillable = [
+        'nom',
+        'prenom',
+        'email',
+        'mot_de_passe',
+        'id_role',
+    ];
+
 }
+
