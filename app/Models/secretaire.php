@@ -5,18 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-
-class utilisateur extends Model
+class secretaire extends Model
 {
-
     use HasFactory;
     protected $fillable = [
-        'nom',
-        'prenom',
-        'email',
-        'mot_de_passe',
-        'id_role',
+        'id',
+        'id_user',
     ];
 
+    public function utilisateur()
+    {
+        return $this->belongsTo(utilisateur::class, 'id_user');
+    }
 }
-
