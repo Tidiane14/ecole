@@ -13,7 +13,7 @@ class secretaire extends Model
         'id_user',
     ];
 
-    public function uutilisateur()
+    public function utilisateur()
     {
         return $this->belongsTo(utilisateur::class, 'id_user');
     }
