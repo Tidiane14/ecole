@@ -9,11 +9,8 @@ class directeur extends Model
 {
     use HasFactory;
     protected $fillable=[
-        'nom',
-        'prenom',
-        'email',
-        'mot_de_passe',
-        'id_role'
+        'id_directeur',
+        'id_user'
     ];
     
     //
